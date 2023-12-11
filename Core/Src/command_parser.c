@@ -8,9 +8,6 @@
 #include "command_parser.h"
 
 void command_parser_fsm() {
-//	uint8_t s[] = "Message from Command Parser\r\n";
-//	HAL_UART_Transmit(&huart2, s, sizeof(s), 100);
-
 	switch(parser_status) {
 	case IDLING:
 		if (temp == '!') {
